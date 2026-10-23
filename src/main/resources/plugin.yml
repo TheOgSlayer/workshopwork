@@ -1,0 +1,16 @@
+name: QuickShop
+version: 1.0.0
+main: com.quickshop.QuickShopPlugin
+api-version: '1.21'
+depend: [Vault]
+commands:
+  shop:
+    aliases: [quickbuy]
+    description: Open the Quick Buy shop (/shop reload to reload prices)
+  shards:
+    description: /shards, /shards <player>, /shards pay <player> <amount>; admins: give|take|set
+permissions:
+  quickshop.reload:
+    default: op
+  quickshop.shards.admin:
+    default: op
